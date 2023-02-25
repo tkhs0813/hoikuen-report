@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import MonthlyReportList from "./parts/monthly-report-list/MonthlyReportList.vue";
-import MonthlyReportViewDialog from "./parts/monthly-report-view-dialog/MonthlyReportViewDialog.vue";
+import MonthlyReportList from "./MonthlyReportList.vue";
+import MonthlyReportViewDialog from "./MonthlyReportViewDialog.vue";
 </script>
 
 <template>

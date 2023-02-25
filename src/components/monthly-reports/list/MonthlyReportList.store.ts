@@ -1,14 +1,19 @@
 import { defineStore } from "pinia";
-import { Report } from "./MonthlyReports.type";
+import { Report } from "./MonthlyReportList.type";
 
 type State = {
   selectedReport: Report | null;
   monthlyReportViewDialog: boolean;
 };
 
-export const useMonthlyReportsStore = defineStore("monthlyReports", {
+export const useMonthlyReportListStore = defineStore("monthlyReportList", {
   state: (): State => {
-    return { selectedReport: null, monthlyReportViewDialog: false };
+    return {
+      /** 選択したレポート */
+      selectedReport: null,
+      /** レポート閲覧ダイアログの開閉状態 */
+      monthlyReportViewDialog: false,
+    };
   },
   actions: {
     selectReport(report: Report) {

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import axios from "axios";
 import { ref } from "vue";
-import { MonthlyReport } from "../../MonthlyReports.type";
-import MonthlyReportCard from "../monthly-report-card/MonthlyReportCard.vue";
+import { MonthlyReport } from "./MonthlyReportList.type";
+import MonthlyReportCard from "./MonthlyReportCard.vue";
 
 type GetMonthlyReportsResponse = MonthlyReport[];
 
@@ -26,7 +26,7 @@ monthlyReports.value = response.data;
         v-for="report in monthlyReport.reports"
         :key="report.id"
         cols="12"
-        md="6"
+        sm="6"
         lg="4"
       >
         <monthly-report-card :report="report" />

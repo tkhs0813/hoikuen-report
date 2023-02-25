@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import baseButton from "@/components/ui/button/base-button.vue";
-import { BUTTON_COLOR } from "@/components/ui/button/button.constant";
-import { useMonthlyReportsStore } from "../../MonthlyReports.store";
-import { Report } from "../../MonthlyReports.type";
+import baseButton from "@/components/ui/BaseButton.vue";
+import { BUTTON_COLOR } from "@/components/ui/BaseButton.constant";
+import { useMonthlyReportListStore } from "./MonthlyReportList.store";
+import { Report } from "./MonthlyReportList.type";
 
 const props = defineProps<{
   report: Report;
 }>();
 
-const monthlyReportsStore = useMonthlyReportsStore();
+const monthlyReportListStore = useMonthlyReportListStore();
 
 function onCardClick() {
-  monthlyReportsStore.selectReport(props.report);
-  monthlyReportsStore.openMonthlyReportViewDialog();
+  monthlyReportListStore.selectReport(props.report);
+  monthlyReportListStore.openMonthlyReportViewDialog();
 }
 </script>
 

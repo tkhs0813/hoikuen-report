@@ -1,5 +1,6 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-import LoginForm from "./parts/login-form/LoginForm.vue";
+import LoginForm from "./LoginForm.vue";
 </script>
 
 <template>

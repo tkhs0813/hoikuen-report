@@ -1,4 +1,4 @@
-import { BUTTON_COLOR, BUTTON_TYPE } from "./button.constant";
+import { BUTTON_COLOR, BUTTON_TYPE } from "./BaseButton.constant";
 
 export type ButtonType = (typeof BUTTON_TYPE)[keyof typeof BUTTON_TYPE];
 

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { defineProps, toRef } from "vue";
 import { useField } from "vee-validate";
-import { TextBoxType } from "./textbox.type";
+import { TextBoxType } from "./BaseTextbox.type";
 
 const props = defineProps<{
   modelValue: string;

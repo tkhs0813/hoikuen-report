@@ -5,7 +5,7 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      component: () => import("@/layouts/BlankLayout.vue"),
+      component: () => import("@/layouts/headerOnlyLayout.vue"),
       children: [
         {
           path: "/",
@@ -14,7 +14,7 @@ const router = createRouter({
         {
           path: "/login",
           name: "LoginPage",
-          component: () => import("@/components/login/LoginPage.vue"),
+          component: () => import("@/components/login/Login.page.vue"),
         },
       ],
     },
@@ -26,7 +26,9 @@ const router = createRouter({
           path: "",
           name: "MonthlyReports",
           component: () =>
-            import("@/components/monthly-reports/MonthlyReports.vue"),
+            import(
+              "@/components/monthly-reports/list/MonthlyReportList.page.vue"
+            ),
         },
       ],
     },

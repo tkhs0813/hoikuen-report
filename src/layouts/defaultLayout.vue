@@ -8,7 +8,12 @@ function onClick() {}
       <v-app-bar color="primary" title="保育園レポート"></v-app-bar>
 
       <v-main>
-        <RouterView />
+        <Suspense>
+          <template #default>
+            <RouterView />
+          </template>
+          <template #fallback>loading...</template>
+        </Suspense>
       </v-main>
     </v-layout>
     <v-layout-item class="text-end" model-value position="bottom" size="88">

@@ -1,16 +1,13 @@
 <script setup lang="ts">
 import * as yup from "yup";
 
-import BaseTextBox from "@/components/ui/textbox/base-textbox.vue";
-import BaseForm from "@/components/ui/form/base-form.vue";
-import BaseButton from "@/components/ui/button/base-button.vue";
-import BaseCheckbox from "@/components/ui/checkbox/base-checkbox.vue";
-import BaseLink from "@/components/ui/link/base-link.vue";
-import {
-  BUTTON_COLOR,
-  BUTTON_TYPE,
-} from "@/components/ui/button/button.constant";
-import { TEXTBOX_TYPE } from "@/components/ui/textbox/textbox.constant";
+import BaseTextBox from "@/components/ui/BaseTextbox.vue";
+import BaseForm from "@/components/ui/BaseForm.vue";
+import BaseButton from "@/components/ui/BaseButton.vue";
+import BaseCheckbox from "@/components/ui/BaseCheckbox.vue";
+import BaseLink from "@/components/ui/BaseLink.vue";
+import { BUTTON_COLOR, BUTTON_TYPE } from "@/components/ui/BaseButton.constant";
+import { TEXTBOX_TYPE } from "@/components/ui/BaseTextbox.constant";
 import { ref } from "vue";
 
 const schema = yup.object({
