@@ -1,5 +1,11 @@
 <script setup lang="ts">
-function onClick() {}
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+function onClick() {
+  router.push("/monthly-reports/create");
+}
 </script>
 
 <template>
@@ -16,6 +22,8 @@ function onClick() {}
         </Suspense>
       </v-main>
     </v-layout>
+
+    <!-- <create-report /> -->
     <v-layout-item class="text-end" model-value position="bottom" size="88">
       <div class="ma-4">
         <v-fab-transition>

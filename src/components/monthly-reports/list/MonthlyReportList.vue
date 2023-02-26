@@ -18,7 +18,7 @@ monthlyReports.value = response.data;
       v-for="monthlyReport in monthlyReports"
       :key="`${monthlyReport.year}${monthlyReport.month}`"
     >
-      <v-col class="mt-2" cols="12">
+      <v-col cols="12" lg="9" xl="6">
         <strong>{{ monthlyReport.year }} / {{ monthlyReport.month }} </strong>
       </v-col>
 

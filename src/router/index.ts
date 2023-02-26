@@ -16,6 +16,14 @@ const router = createRouter({
           name: "LoginPage",
           component: () => import("@/components/login/Login.page.vue"),
         },
+        {
+          path: "/monthly-reports/create",
+          name: "MonthlyReportCreate",
+          component: () =>
+            import(
+              "@/components/monthly-reports/create/MonthlyReportCreate.page.vue"
+            ),
+        },
       ],
     },
     {
@@ -24,7 +32,7 @@ const router = createRouter({
       children: [
         {
           path: "",
-          name: "MonthlyReports",
+          name: "MonthlyReportList",
           component: () =>
             import(
               "@/components/monthly-reports/list/MonthlyReportList.page.vue"

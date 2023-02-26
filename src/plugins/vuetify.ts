@@ -54,3 +54,5 @@ export default createVuetify({
     },
   },
 });
+
+export { components, directives };
